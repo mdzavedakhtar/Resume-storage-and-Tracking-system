@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Storage & Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Resume Storage & Tracking System</h1>
+
+    <form id="resumeForm">
+        <input type="text" id="name" placeholder="Candidate Name" required>
+        <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+        <input type="file" id="resume" accept=".pdf" required>
+        <button type="submit">Upload Resume</button>
+    </form>
+
+    <h2>Stored Resumes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Skills</th>
+                <th>Resume</th>
+            </tr>
+        </thead>
+        <tbody id="resumeList"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
